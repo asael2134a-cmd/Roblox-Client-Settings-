@@ -102,5 +102,6 @@
   "FFlagStreamingEnabled": "False",
   "FIntStreamingTargetTextureSizeMB": "16",
   "FFlagEnableAudioOutputDevice": "False",
-  "DFIntCSRMaxStreamedRegionsPerFrame": "1"
+  "DFIntCSRMaxStreamedRegionsPerFrame": "1",
+  "FFlagEnableInGameMenuV3": "False"
 }
