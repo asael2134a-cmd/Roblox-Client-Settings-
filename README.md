@@ -1,192 +1,194 @@
-# Roblox-Client-Settings-
+# Roblox-Client-Settings
 
-Configuración optimizada del cliente Roblox para rendimiento máximo. Esta es una colección exhaustiva de flags y configuraciones que mejoran significativamente el rendimiento y la experiencia visual.
+Optimized Roblox client settings for maximum performance. This is a comprehensive collection of flags and configurations that significantly improve performance and visual experience.
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [Optimización de Rendimiento (FPS)](#optimización-de-rendimiento-fps)
-- [Configuración de Gráficos](#configuración-de-gráficos)
-- [Iluminación y Sombras](#iluminación-y-sombras)
-- [Texturas y Materiales](#texturas-y-materiales)
-- [Efectos Visuales](#efectos-visuales)
-- [Audio y Chat](#audio-y-chat)
-- [Telemetría](#telemetría)
-- [Otras Optimizaciones](#otras-optimizaciones)
+- [Performance Optimization (FPS)](#performance-optimization-fps)
+- [Graphics Settings](#graphics-settings)
+- [Lighting and Shadows](#lighting-and-shadows)
+- [Textures and Materials](#textures-and-materials)
+- [Visual Effects](#visual-effects)
+- [Audio and Chat](#audio-and-chat)
+- [Telemetry](#telemetry)
+- [Other Optimizations](#other-optimizations)
 
 ---
 
-## 🎮 Optimización de Rendimiento (FPS)
+## 🎮 Performance Optimization (FPS)
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `DFIntTaskSchedulerTargetFps` | 9999 | Establece el FPS objetivo a máximo, permitiendo que tu sistema rinda sin límites |
-| `FFlagEnableFrameRateManager` | True | Activa el gestor de velocidad de fotogramas |
-| `FFlagHandleAltEnterFullscreenManually` | True | Maneja la pantalla completa manualmente con Alt+Enter |
-| `FFlagEnableQuickGameLaunch` | True | Permite iniciar juegos más rápidamente |
-| `DFIntRenderClipPlaneNear` | 5 | Distancia mínima de renderizado (en studs) |
-| `DFIntRenderClipPlaneFar` | 500 | Distancia máxima de renderizado (en studs) |
+| `DFIntTaskSchedulerTargetFps` | 9999 | Sets target FPS to maximum, allowing your system to run unlimited |
+| `FFlagEnableFrameRateManager` | True | Enables frame rate manager |
+| `FFlagHandleAltEnterFullscreenManually` | True | Handles fullscreen manually with Alt+Enter |
+| `FFlagEnableQuickGameLaunch` | True | Enables quick game launch |
+| `DFIntRenderClipPlaneNear` | 5 | Minimum render distance (in studs) |
+| `DFIntRenderClipPlaneFar` | 500 | Maximum render distance (in studs) |
 
 ---
 
-## 🎨 Configuración de Gráficos
+## 🎨 Graphics Settings
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagFixGraphicsQuality` | True | Corrige problemas de calidad gráfica |
-| `FFlagDisablePostFx` | True | Desactiva efectos post-procesamiento (bloom, etc.) |
-| `DFIntDebugFRMQualityLevelOverride` | 1 | Fuerza nivel de calidad mínimo (1=muy bajo) |
-| `DFIntGraphicsQualityLevel` | 1 | Establecer nivel de calidad gráfica global |
-| `FFlagDisableQualityLevelSelection` | True | Desactiva la selección manual de calidad |
-| `FFlagRenderLowDetailCharacters` | True | Reduce detalles en caracteres/avatares |
-| `FFlagRenderLowDetailEnvironment` | True | Reduce detalles en el entorno |
-| `FFlagRenderLowDetailModels` | True | Reduce detalles en modelos 3D |
-| `FFlagRenderLowDetailTerrain` | True | Reduce detalles en el terreno |
+| `FFlagFixGraphicsQuality` | True | Fixes graphics quality issues |
+| `FFlagDisablePostFx` | True | Disables post-processing effects (bloom, etc.) |
+| `DFIntDebugFRMQualityLevelOverride` | 1 | Forces minimum quality level (1=very low) |
+| `DFIntGraphicsQualityLevel` | 1 | Set global graphics quality level |
+| `FFlagDisableQualityLevelSelection` | True | Disables manual quality selection |
+| `FFlagRenderLowDetailCharacters` | True | Reduces character/avatar details |
+| `FFlagRenderLowDetailEnvironment` | True | Reduces environment details |
+| `FFlagRenderLowDetailModels` | True | Reduces 3D model details |
+| `FFlagRenderLowDetailTerrain` | True | Reduces terrain details |
 
 ---
 
-## 💡 Iluminación y Sombras
+## 💡 Lighting and Shadows
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagDisableShadows` | True | Desactiva completamente las sombras en tiempo real |
-| `FFlagDisableDynamicLights` | True | Desactiva luces dinámicas |
-| `FFlagDisableEnvironmentLighting` | True | Desactiva iluminación ambiental |
-| `FFlagDisablePointLights` | True | Desactiva luces puntuales |
-| `FFlagDisableSpotLights` | True | Desactiva focos de luz |
-| `FFlagDisableSurfaceLights` | True | Desactiva luces de superficie |
-| `FFlagDisableVoxelLighting` | True | Desactiva iluminación voxel |
-| `FFlagRenderForceNoShadows` | True | Fuerza sin sombras (refuerza `FFlagDisableShadows`) |
-| `FFlagDebugForceFSMCPULightingOnPC` | True | Fuerza iluminación por CPU (mejor rendimiento) |
-| `FIntFSMCPULightingPercentage` | 10 | Porcentaje de iluminación procesada por CPU (10%) |
-| `FFlagDebugForceCPULightCulling` | True | Usa CPU para culling de luces |
-| `FFlagFastGPULightCulling3` | False | Desactiva fast GPU light culling |
-| `FFlagGpuGeometryManager` | False | Desactiva gestor de geometría GPU |
-| `DFIntDebugLightUpdateMode` | 2 | Modo de actualización de luces |
-| `DFIntLightingDefaultCellsPerAxis` | 1 | Celdas mínimas de iluminación por eje |
-| `FIntRenderShadowIntensity` | 0 | Intensidad de sombras (0=desactivado) |
-| `DFIntRenderShadowmapSize` | 0 | Tamaño del mapa de sombras |
-| `DFIntRenderShadowmapResolution` | 0 | Resolución del mapa de sombras |
+| `FFlagDisableShadows` | True | Completely disables real-time shadows |
+| `FFlagDisableDynamicLights` | True | Disables dynamic lights |
+| `FFlagDisableEnvironmentLighting` | True | Disables ambient lighting |
+| `FFlagDisablePointLights` | True | Disables point lights |
+| `FFlagDisableSpotLights` | True | Disables spot lights |
+| `FFlagDisableSurfaceLights` | True | Disables surface lights |
+| `FFlagDisableVoxelLighting` | True | Disables voxel lighting |
+| `FFlagRenderForceNoShadows` | True | Forces no shadows (reinforces `FFlagDisableShadows`) |
+| `FFlagDebugForceFSMCPULightingOnPC` | True | Forces CPU lighting (better performance) |
+| `FIntFSMCPULightingPercentage` | 10 | Percentage of lighting processed by CPU (10%) |
+| `FFlagDebugForceCPULightCulling` | True | Uses CPU for light culling |
+| `FFlagFastGPULightCulling3` | False | Disables fast GPU light culling |
+| `FFlagGpuGeometryManager` | False | Disables GPU geometry manager |
+| `DFIntDebugLightUpdateMode` | 2 | Light update mode |
+| `DFIntLightingDefaultCellsPerAxis` | 1 | Minimum lighting cells per axis |
+| `FIntRenderShadowIntensity` | 0 | Shadow intensity (0=disabled) |
+| `DFIntRenderShadowmapSize` | 0 | Shadowmap size |
+| `DFIntRenderShadowmapResolution` | 0 | Shadowmap resolution |
 
 ---
 
-## 🖼️ Texturas y Materiales
+## 🖼️ Textures and Materials
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagDisableTextureStreaming` | True | Desactiva carga dinámica de texturas |
-| `FFlagDisableAllTextureStreaming` | True | Desactiva completamente streaming de texturas |
-| `FFlagDisableRenderingTextures` | True | Desactiva renderizado de texturas |
-| `DFIntTextureQuality` | 1 | Calidad de texturas (1=muy baja) |
-| `DFIntMaxTextureSize` | 32 | Tamaño máximo de textura en píxeles |
-| `DFIntMaxTextureChannels` | 1 | Número máximo de canales de textura |
-| `FFlagRenderForceLowQualityTextures` | True | Fuerza texturas de baja calidad |
-| `FIntDefaultMeshCacheSizeMB` | 32 | Caché de malla en MB |
-| `DFIntTextureCompositorDefaultMaxTextureSize` | 32 | Tamaño máximo de textura del compositor |
-| `FFlagForceBasicMaterials` | True | Usa solo materiales básicos |
-| `FStringPartTexturePackTable2022` | { } | Tabla de paquetes de texturas vacía |
-| `DFIntMeshContentProviderForceCacheSize` | 16 | Tamaño forzado de caché de contenido de malla |
-| `FFlagDisableTerrainTextures` | True | Desactiva texturas de terreno |
-| `FFlagDisableCharacterTextures` | False | Mantiene texturas de personaje |
-| `FFlagDisableEnvironmentTextures` | True | Desactiva texturas del entorno |
-| `FFlagDisableModelTextures` | True | Desactiva texturas de modelos |
-| `FFlagDisableUITextures` | False | Mantiene texturas de UI |
+| `FFlagDisableTextureStreaming` | True | Disables dynamic texture loading |
+| `FFlagDisableAllTextureStreaming` | True | Completely disables texture streaming |
+| `FFlagDisableRenderingTextures` | True | Disables texture rendering |
+| `DFIntTextureQuality` | 1 | Texture quality (1=very low) |
+| `DFIntMaxTextureSize` | 32 | Maximum texture size in pixels |
+| `DFIntMaxTextureChannels` | 1 | Maximum number of texture channels |
+| `FFlagRenderForceLowQualityTextures` | True | Forces low-quality textures |
+| `FIntDefaultMeshCacheSizeMB` | 32 | Mesh cache in MB |
+| `DFIntTextureCompositorDefaultMaxTextureSize` | 32 | Compositor maximum texture size |
+| `FFlagForceBasicMaterials` | True | Uses only basic materials |
+| `FStringPartTexturePackTable2022` | { } | Empty texture package table |
+| `DFIntMeshContentProviderForceCacheSize` | 16 | Forced mesh content cache size |
+| `FFlagDisableTerrainTextures` | True | Disables terrain textures |
+| `FFlagDisableCharacterTextures` | False | Keeps character textures |
+| `FFlagDisableEnvironmentTextures` | True | Disables environment textures |
+| `FFlagDisableModelTextures` | True | Disables model textures |
+| `FFlagDisableUITextures` | False | Keeps UI textures |
 
 ---
 
-## ✨ Efectos Visuales
+## ✨ Visual Effects
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagDisableSpecialEffects` | True | Desactiva efectos especiales |
-| `FFlagDisableParticleEffects` | True | Desactiva efectos de partículas |
-| `FFlagDisableStudioSpecialEffects` | True | Desactiva efectos especiales en Studio |
-| `DFIntParticleMaxCount` | 10 | Número máximo de partículas (10) |
-| `DFIntParticleMaxEmitters` | 5 | Número máximo de emisores de partículas (5) |
-| `FFlagForceNoDecals` | True | Desactiva decals completamente |
-| `FFlagDisableGraphicsDisableDirect3D11` | False | No fuerza desactivar Direct3D11 |
-| `FFlagDebugGraphicsPreferOpenGL` | False | No prefiere OpenGL |
-| `FFlagGraphicsEnableSignal` | False | Desactiva señales gráficas |
-| `FIntSSAOBlurPasses` | 0 | Pases de desenfoque SSAO (0=desactivado) |
+| `FFlagDisableSpecialEffects` | True | Disables special effects |
+| `FFlagDisableParticleEffects` | True | Disables particle effects |
+| `FFlagDisableStudioSpecialEffects` | True | Disables studio special effects |
+| `DFIntParticleMaxCount` | 10 | Maximum particle count (10) |
+| `DFIntParticleMaxEmitters` | 5 | Maximum particle emitters (5) |
+| `FFlagForceNoDecals` | True | Disables decals completely |
+| `FFlagDisableGraphicsDisableDirect3D11` | False | Does not force Direct3D11 disabled |
+| `FFlagDebugGraphicsPreferOpenGL` | False | Does not prefer OpenGL |
+| `FFlagGraphicsEnableSignal` | False | Disables graphics signals |
+| `FIntSSAOBlurPasses` | 0 | SSAO blur passes (0=disabled) |
 
 ---
 
-## 🌍 Geometría y Culling
+## 🌍 Geometry and Culling
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `DFIntCSGLevelOfDetailSwitchingDistance` | 0 | Desactiva LOD switching para CSG |
-| `DFIntCSGLevelOfDetailSwitchingDistanceL12` | 0 | Distancia de cambio LOD L1-L2 |
-| `DFIntCSGLevelOfDetailSwitchingDistanceL23` | 0 | Distancia de cambio LOD L2-L3 |
-| `DFIntCSGLevelOfDetailSwitchingDistanceL34` | 0 | Distancia de cambio LOD L3-L4 |
-| `DFIntCSRMaxStreamedRegionsPerFrame` | 1 | Regiones máximas de streaming por fotograma |
-| `FFlagStreamingEnabled` | False | Desactiva streaming completamente |
-| `FIntStreamingTargetTextureSizeMB` | 16 | Tamaño objetivo de textura de streaming |
-| `FIntTerrainArraySliceSize` | 1 | Tamaño de slice de array de terreno |
-| `DFFlagDebugPauseVoxelizer` | True | Pausa el voxelizador |
-| `DFFlagDebugRenderForceTechnologyVoxel` | False | No fuerza tecnología voxel |
-| `FIntFRMMaxGrassDistance` | 0 | Distancia máxima de pasto (0=desactivado) |
-| `FIntFRMMinGrassDistance` | 0 | Distancia mínima de pasto |
-| `FIntFRMMinDistance` | 0 | Distancia mínima de renderizado lejano |
+| `DFIntCSGLevelOfDetailSwitchingDistance` | 0 | Disables LOD switching for CSG |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL12` | 0 | L1-L2 LOD change distance |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL23` | 0 | L2-L3 LOD change distance |
+| `DFIntCSGLevelOfDetailSwitchingDistanceL34` | 0 | L3-L4 LOD change distance |
+| `DFIntCSRMaxStreamedRegionsPerFrame` | 1 | Maximum streaming regions per frame |
+| `FFlagStreamingEnabled` | False | Completely disables streaming |
+| `FIntStreamingTargetTextureSizeMB` | 16 | Streaming target texture size |
+| `FIntTerrainArraySliceSize` | 1 | Terrain array slice size |
+| `DFFlagDebugPauseVoxelizer` | True | Pauses voxelizer |
+| `DFFlagDebugRenderForceTechnologyVoxel` | False | Does not force voxel technology |
+| `FIntFRMMaxGrassDistance` | 0 | Maximum grass distance (0=disabled) |
+| `FIntFRMMinGrassDistance` | 0 | Minimum grass distance |
+| `FIntFRMMinDistance` | 0 | Minimum far render distance |
 
 ---
 
-## 🔇 Audio y Chat
+## 🔇 Audio and Chat
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagEnableAudioOutputDevice` | False | Desactiva selector de dispositivo de audio |
-| `FFlagAudioDeviceSelectorEnabled` | False | Desactiva selector de dispositivo de audio |
-| `FFlagVoiceChatServiceEnabled` | False | Desactiva servicio de chat de voz |
-| `DFFlagAvatarChatServiceEnabled` | False | Desactiva servicio de chat de avatar |
-| `DFFlagAvatarChatEnableVoiceChat` | False | Desactiva chat de voz en avatares |
-| `FFlagSimplifiedChatFilterEnable` | True | Activa filtro de chat simplificado |
+| `FFlagEnableAudioOutputDevice` | False | Disables audio device selector |
+| `FFlagAudioDeviceSelectorEnabled` | False | Disables audio device selector |
+| `FFlagVoiceChatServiceEnabled` | False | Disables voice chat service |
+| `DFFlagAvatarChatServiceEnabled` | False | Disables avatar chat service |
+| `DFFlagAvatarChatEnableVoiceChat` | False | Disables voice chat on avatars |
+| `FFlagSimplifiedChatFilterEnable` | True | Enables simplified chat filter |
 
 ---
 
-## 📊 Telemetría
+## 📊 Telemetry
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagDebugDisableTelemetryEphemeralCounter` | True | Desactiva contador telemetría efímera |
-| `FFlagDebugDisableTelemetryEphemeralStat` | True | Desactiva estadística telemetría efímera |
-| `FFlagDebugDisableTelemetryEventIngest` | True | Desactiva ingesta de eventos telemetría |
-| `FFlagDebugDisableTelemetryPoint` | True | Desactiva puntos de telemetría |
-| `FFlagDebugDisableTelemetryV2Counter` | True | Desactiva contador V2 de telemetría |
-| `FFlagDebugDisableTelemetryV2Event` | True | Desactiva evento V2 de telemetría |
-| `FFlagDebugDisableTelemetryV2Stat` | True | Desactiva estadística V2 de telemetría |
-| `FFlagAdServiceEnabled` | False | Desactiva servicio de anuncios |
-| `FLogNetwork` | 0 | Nivel de log de red (0=desactivado) |
+| `FFlagDebugDisableTelemetryEphemeralCounter` | True | Disables ephemeral telemetry counter |
+| `FFlagDebugDisableTelemetryEphemeralStat` | True | Disables ephemeral telemetry stat |
+| `FFlagDebugDisableTelemetryEventIngest` | True | Disables telemetry event ingestion |
+| `FFlagDebugDisableTelemetryPoint` | True | Disables telemetry points |
+| `FFlagDebugDisableTelemetryV2Counter` | True | Disables V2 telemetry counter |
+| `FFlagDebugDisableTelemetryV2Event` | True | Disables V2 telemetry event |
+| `FFlagDebugDisableTelemetryV2Stat` | True | Disables V2 telemetry stat |
+| `FFlagAdServiceEnabled` | False | Disables ad service |
+| `FLogNetwork` | 0 | Network log level (0=disabled) |
 
 ---
 
-## 🔧 Otras Optimizaciones
+## 🔧 Other Optimizations
 
-| Flag | Valor | Descripción |
+| Flag | Value | Description |
 |------|-------|-------------|
-| `FFlagPreloadAllFonts` | False | No precarga todas las fuentes |
-| `FFlagPreloadTextures` | False | No precarga texturas |
-| `FFlagUseShadowMap` | False | No usa mapa de sombras |
-| `FIntUITextureMaxRenderTextureSize` | 64 | Tamaño máximo de textura UI renderizada |
-| `FFlagRenderGpuTextureCompressor` | False | No usa compresor GPU de texturas |
-| `DFIntGPUTextureCompressorWorkerCount` | 1 | Trabajadores compresor GPU (1) |
-| `FIntEmotesAnimationsMemoryCacheSize` | 0 | Caché de memoria para animaciones de emotes |
-| `FIntEnableCameraByDefault` | False | No habilita cámara por defecto |
-| `DFIntMaxFrameBufferSize` | 256 | Tamaño máximo del buffer de fotogramas |
-| `FFlagEnableInGameMenuV3` | False | Desactiva menú en juego V3 |
-| `FFlagFacialAnimationStreamingServiceEnabled` | False | Desactiva servicio de streaming de animación facial |
-| `FFlagDebugForceMoveToCPU` | True | Mueve cálculos a CPU |
-| `FFlagDisableGPUAcceleration` | False | No desactiva aceleración GPU completamente |
-| `FFlagDisableHWAcceleration` | False | No desactiva aceleración hardware |
-| `FFlagFastLightUpdates` | True | Habilita actualizaciones rápidas de luces |
+| `FFlagPreloadAllFonts` | False | Does not preload all fonts |
+| `FFlagPreloadTextures` | False | Does not preload textures |
+| `FFlagUseShadowMap` | False | Does not use shadow map |
+| `FIntUITextureMaxRenderTextureSize` | 64 | Maximum UI render texture size |
+| `FFlagRenderGpuTextureCompressor` | False | Does not use GPU texture compressor |
+| `DFIntGPUTextureCompressorWorkerCount` | 1 | GPU texture compressor workers (1) |
+| `FIntEmotesAnimationsMemoryCacheSize` | 0 | Emote animations memory cache size |
+| `FIntEnableCameraByDefault` | False | Does not enable camera by default |
+| `DFIntMaxFrameBufferSize` | 256 | Maximum frame buffer size |
+| `FFlagEnableInGameMenuV3` | False | Disables in-game menu V3 |
+| `FFlagFacialAnimationStreamingServiceEnabled` | False | Disables facial animation streaming service |
+| `FFlagDebugForceMoveToCPU` | True | Moves calculations to CPU |
+| `FFlagDisableGPUAcceleration` | False | Does not fully disable GPU acceleration |
+| `FFlagDisableHWAcceleration` | False | Does not disable hardware acceleration |
+| `FFlagFastLightUpdates` | True | Enables fast light updates |
 
 ---
 
-## 💡 Cómo Usar
+## 💡 How to Use
 
-1. Copia los flags que necesites según tu configuración
-2. Navega a: `%localappdata%\Roblox\Versions\<version>\ClientSettings\`
-3. Abre o crea archivo `ClientAppSettings.json`
-4. Pega los flags en formato JSON
-5. Reinicia Roblox
+1. Copy the flags you need for your configuration
+2. Navigate to: `%localappdata%\Roblox\Versions\<version>\ClientSettings\`
+3. Open or create the `ClientAppSettings.json` file
+4. Paste the flags in JSON format
+5. Restart Roblox
 
-**Nota:** Esta configuración prioriza el rendimiento sobre la calidad visual. Ajusta según tus necesidades.
+Or simply use the `roblox-flags.json` file provided in this repository.
+
+**Note:** This configuration prioritizes performance over visual quality. Adjust according to your needs.
